@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Kode ini akan me-refresh halaman otomatis setiap 3 detik -->
+    <meta http-equiv="refresh" content="3">
+    <title>Memproses Foto...</title>
+    <style>
+        body { 
+            background-color: #111827; 
+            color: white; 
+            text-align: center; 
+            font-family: sans-serif; 
+            padding-top: 30vh; 
+            margin: 0;
+        }
+        .spinner {
+            border: 6px solid #1f2937;
+            border-top: 6px solid #3b82f6;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px auto;
+        }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    </style>
+</head>
+<body>
+    <div class="spinner"></div>
+    <h2>📸 Sedang Memproses Foto...</h2>
+    <p style="color: #9ca3af;">Mohon tunggu sebentar, foto Anda sedang diunggah ke server.<br>Halaman ini akan memuat ulang secara otomatis.</p>
+</body>
+</html>
